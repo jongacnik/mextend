@@ -28,12 +28,13 @@ mextend is meant to be consumed in a [CommonJS](http://www.commonjs.org/), [Brow
 	
 	console.log(mextend(defaults, options));
 
-	//	{
-	//		'a' : 0,
-	//		'b' : {
-	//			'super' : 'duper'
-	//		},
-	//		'c' : function(){ 
-	//			console.log('really cool');
-	//		}
-	//	}
+	# Output
+	{
+		'a' : 0,
+		'b' : {
+			'super' : 'duper'
+		},
+		'c' : function(){ 
+			console.log('really cool');
+		}
+	}
