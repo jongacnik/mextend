@@ -10,30 +10,30 @@ mextend is meant to be consumed in a [CommonJS](http://www.commonjs.org/), [Brow
 	
 	var mextend = require('mextend');
 	
-  var defaults = {
-    'a' : 0,
-    'b' : {},
-    'c' : function(){ }
-  }
+	var defaults = {
+		'a' : 0,
+		'b' : {},
+		'c' : function(){ }
+	}
 
-  var options = {
-    'a' : 0,
-    'b' : {
-      'super' : 'duper'
-    },
-    'c' : function(){ 
-      console.log('really cool');
-    }
-  }
+	var options = {
+		'a' : 0,
+		'b' : {
+			'super' : 'duper'
+		},
+		'c' : function(){ 
+			console.log('really cool');
+		}
+	}
 	
-  console.log(mextend(defaults, options));
+	console.log(mextend(defaults, options));
 
-  // {
-  //   'a' : 0,
-  //   'b' : {
-  //     'super' : 'duper'
-  //   },
-  //   'c' : function(){ 
-  //     console.log('really cool');
-  //   }
-  // }
+	//	{
+	//		'a' : 0,
+	//		'b' : {
+	//			'super' : 'duper'
+	//		},
+	//		'c' : function(){ 
+	//			console.log('really cool');
+	//		}
+	//	}
